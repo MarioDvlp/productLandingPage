@@ -84,7 +84,7 @@ header img {
 }
 
 .hero-container {
-    position: relative;
+    /* position: relative; */
     top: 60px;
     display: flex;
     flex-direction: column;
@@ -395,3 +395,60 @@ footer {
     font-size: 1rem;
 }
 
+/* ============================================================================== */
+/* ====================QUERIES=================================================== */
+/* ============================================================================== */
+
+@media (max-width: 846px){
+    .price-container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .price-card {
+        margin: 10px;
+    }
+    .nav-container li{
+        font-size: 1.6rem;
+    }
+    .nav-container ul {
+        margin-right: 1rem;
+    }
+}
+@media (max-width: 610px) {
+    .hero-container h2 {
+        margin: 25px;
+        text-align: center;
+    }
+    .features-container {
+        width: 80%;
+        grid-template-rows: minmax(100px, auto);
+        row-gap: 15px;
+        justify-items: center;
+        grid-template-areas: 
+        "d d d d"
+        "a a a a"
+        "e e e e"
+        "b b b b"
+        "f f f f"
+        "c c c c";
+    }
+    .features-text {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .features-text h3 {
+        font-size: 1.6rem;
+
+    }
+    .features-text p {
+        font-size: 1rem;
+    }
+    .hero-container h2 {
+        font-size: 2rem;
+    }
+    .video-container {
+        width: 100%;
+        height: 30rem;
+    }
+}
