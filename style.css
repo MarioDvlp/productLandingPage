@@ -149,6 +149,7 @@ form {
 .features-container {
     width: 60%;
     height: auto;
+    align-content: center;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
@@ -444,6 +445,8 @@ footer {
     }
     .features-container {
         width: 80%;
+        height: auto;
+        align-content: center;
         grid-template-rows: minmax(100px, auto);
         row-gap: 15px;
         justify-items: center;
@@ -472,7 +475,7 @@ footer {
     }
     .video-container {
         width: 100%;
-        height: 30rem;
+        height:30rem;
     }
 
 
